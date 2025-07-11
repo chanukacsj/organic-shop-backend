@@ -6,7 +6,7 @@ export const saveContact = (contact: Contact): Contact => {
     return contact;
 }
 export const validateContact = (contact: Contact) => {
-    if(!contact.subject || !contact.email || !contact.message) {
+    if(!contact.name || !contact.email || !contact.message) {
         return "All fields are required";
     }
     return null;
